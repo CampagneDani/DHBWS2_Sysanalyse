@@ -1,0 +1,26 @@
+<div>
+  <form [formGroup]="myform">
+    <label for="aufgabentitel">Titel</label> <br>
+    <input type="text" formControlName="titel" >
+    <br>
+    <span *ngIf="titel && titel.invalid && titel.touched" style="color: red;">Titel ist notwendig</span> <br>
+    
+
+    <label for="taskbeschreibung">Beschreibung</label> <br />
+    <input type="text" formControlName="beschreibung" /><br />
+
+    <label for="stunden">Kontakt</label> <br />
+    <input type="text"  formControlName="stunden" /><br />
+     <br>
+
+    <label for="Wichtig"
+      >Wichtig
+      <input type="checkbox" formControlName="wichtig" /> </label
+    ><br />
+    <br />
+  </form>
+</div>
+<br />
+
+<button [disabled]="myform.invalid" mat-button (click)="save()">Speichern</button>
+<button mat-button mat-dialog-close>Schließen</button>

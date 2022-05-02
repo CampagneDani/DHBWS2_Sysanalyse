@@ -1,0 +1,35 @@
+
+<button class="btn btn-success" (click)="openDialog()">
+    Anzeige erstellen
+  </button>
+  <p align="right">
+    <button type="button" (click)="removeAllTodo()">Alle Anzeigen Löschen</button>
+  </p>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Titel</th>
+        <th scope="col">Beschreibung</th>
+        <th scope="col">Kontakt</th>
+        <th scope="col">Wichtig?</th>
+        <th scope="col"></th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let aufgabe of todoList$|async; let i = index">
+        <td>{{ aufgabe.titel }}</td>
+        <td>{{ aufgabe.beschreibung }}</td>
+        <td>{{ aufgabe.stunden }}</td>
+      
+        <td><input type="checkbox" [checked]="aufgabe.wichtig" /></td>
+        <td><button type="button" class="btn btn-success" (click)="editItem(i, aufgabe)">Editieren</button> </td>
+        <td><button type="button" class="btn btn-danger" (click)="removeItem(i)">
+          Diese Anzeige löschen
+        </button></td>
+    
+  
+      </tr>
+    </tbody>
+  </table>
+  <router-outlet></router-outlet>

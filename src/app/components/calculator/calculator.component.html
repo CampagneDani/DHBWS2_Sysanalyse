@@ -1,0 +1,15 @@
+<body>
+    <section>
+        <div class="container">
+            <div id="display"> {{ result }} </div>
+            <div class="buttons">
+                <div class="button" *ngFor="let button of button" (click)="onButtonPress(button)" >
+                    {{button}}
+                </div>
+
+            </div>
+        </div>
+    </section>
+</body>
+
+
