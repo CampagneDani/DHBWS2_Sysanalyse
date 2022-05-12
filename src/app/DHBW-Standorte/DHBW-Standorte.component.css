@@ -1,0 +1,15 @@
+.location-map{
+    width: 50%;
+    height: 50%;
+}
+
+.svg{
+
+ 
+    position: absolute;
+    width: 64rem;
+    height: 64rem;
+}
+body{
+    background-color: blanchedalmond;
+}

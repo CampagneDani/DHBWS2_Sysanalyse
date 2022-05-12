@@ -1,0 +1,61 @@
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+  ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  button{
+    width: 300px;
+    height: 100x;
+    
+    padding: 10px;
+    padding-bottom: 2px;
+    background-color: #ff1493;
+    margin: 10px;
+    color: #fff;
+    text-shadow: none;
+    box-shadow: 1px 0 1px #be3077, 0 1px 1px #ff69b4, 2px 1px 1px #be3077, 1px 2px 1px #ff69b4, 3px 2px 1px #be3077, 2px 3px 1px #ff69b4, 4px 3px 1px #be3077, 3px 4px 1px #ff69b4, 5px 4px 1px #be3077, 4px 5px 1px #ff69b4, 6px 5px 1px #be3077;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 11px;
+    box-sizing: border-box;
+    position: relative;
+    user-select: none;
+    border: 0;
+    font-size: 45px;
+    font-weight: 400;
+    font-family: "Josefin Slab",cursive;
+    outline: 0}
+    h5{    text-shadow: 2px 2px 4px #999;
+      text-align: center;
+      margin: auto;
+      color: #333;
+      font-size: 45px;
+      
+    width: 500px;
+    left: 50%;
+    top: 50%
+    }
+    .imgstyles{
+      height: 90;
+      width: 90;
+    }
+    ul{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }

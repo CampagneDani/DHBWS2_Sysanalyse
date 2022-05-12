@@ -1,22 +1,37 @@
-<h1>Willkommen bei Noodle!</h1>
-<nav>
-  <ul style="display: flex; list-style: none; justify-content: center;">
-    <li >
-  <a routerLink="/Home" routerLinkActive="active">Home</a> 
-    </li>
-    <li>
-  <a routerLink="/Todo-Liste" routerLinkActive="active">Schwarzes Brett</a>
-    </li>
-    <li>
-      <a routerLink="/Taschenrechner" routerLinkActive="active"> Taschenrechner</a>
-    </li>
-    <li>
-      <a routerLink="/DHBW_News" routerLinkActive="active">DHBW Connect</a>
-    </li>
-  </ul>
 
+
+
+
+
+
+<!DOCTYPE html>
+<div class="Header1">
+  <nav>
+    <img src="assets\img\header_noodle.jpg" alt="header noodle" width="100%" >
+      <ul>
+      <li>
+        <a routerLink="/Home" routerLinkActive="active">Home</a> 
+          </li>
+          <li>
+        <a routerLink="/Todo-Liste" routerLinkActive="active">Noodle Schwarzes Brett</a>
+          </li>
+          <li>
+            <a routerLink="/DHBW_Feed" routerLinkActive="active"> Noodle Feed</a>
+          </li> 
+          <li>
+            <a routerLink="/Calendar" routerLinkActive="active"> Calendar</a>
+          </li> 
+          <li>
+            <a routerLink="/DHBW-Standorte" routerLinkActive="active"> DHBW Standorte</a>
+          </li> 
+          <li style="float:right">
+            <a href="https://www.dhbw.de/startseite" routerLinkActive="active">DHBW Website</a>
+          </li>          
+        <li style="float:right"><a routerLink="Impressum" routerLinkActive="active">Impressum</a></li>
+      </ul>
 </nav>
+</div>
+   <router-outlet></router-outlet>
 
-<router-outlet></router-outlet>
-<h1 align="center" style="color: green; margin-top: 60rem;">Here our Current News and Posts</h1>
-<app-DHBWNews [posts]="newsFeedPosts"></app-DHBWNews>
+
+

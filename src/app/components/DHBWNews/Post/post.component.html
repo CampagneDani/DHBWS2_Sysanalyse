@@ -1,5 +1,5 @@
 <div class="container shadow-sm mt-3">
-    <div class="row card-header p-3">
+    <div class="row card-header p-3" style="background-color:lightgray; border: outset 2px;">
         <div class="col-4 circle">
             <img *ngIf="post?.profilePhoto" src={{post.profilePhoto}}>
         </div>
@@ -17,17 +17,18 @@
 
         </div>
         <div class="col-4" >
-            <button type="button" class="btn btn-link float-right">View Profile</button>
+            <button type="button" class="btn btn-link float-right" routerLink="/Impressum" routerLinkActive="active">View Profile</button>
         </div>
     </div>
 
+    <div class="underground" style="background-color:blanchedalmond;border-left: solid 2px;border-right: solid 2px;">
     <div class="row p-3">
         <div class="col-12 font-weight-normal">{{post?.postText}}</div>
     </div>
 
     <div class="row p-3">
         <div class="col-12 d-flex justify-content-center">
-            <img *ngIf="post?.postPhoto" src={{post.postPhoto}}>
+            <img *ngIf="post?.postPhoto" src={{post.postPhoto}} width="400px" height="400px">
         </div>
     </div>
 
@@ -63,6 +64,7 @@
                     <path fill-rule="evenodd" d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/>
                 </svg>
             </button>
+        </div>
         </div>
     </div>
    
