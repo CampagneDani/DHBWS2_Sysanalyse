@@ -8,30 +8,101 @@
 <div class="Header1">
   <nav>
     <img src="assets\img\header_noodle.jpg" alt="header noodle" width="100%" >
-      <ul>
-      <li>
-        <a routerLink="/Home" routerLinkActive="active">Home</a> 
+      <ul style="list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: black;">
+      <li style="float:left;">
+        <a style="display:block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;" routerLink="/Home" routerLinkActive="active">Noodle Home</a> 
           </li>
           <li>
-        <a routerLink="/Todo-Liste" routerLinkActive="active">Noodle Schwarzes Brett</a>
+        <a style="display:block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;"routerLink="/Todo-Liste" routerLinkActive="active">Noodle Schwarzes Brett</a>
           </li>
           <li>
-            <a routerLink="/DHBW_Feed" routerLinkActive="active"> Noodle Feed</a>
+            <a style="display:block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;"routerLink="/DHBW_Feed" routerLinkActive="active"> Noodle Feed</a>
           </li> 
           <li>
-            <a routerLink="/Calendar" routerLinkActive="active"> Calendar</a>
+            <a style="display:block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;"routerLink="/Calendar" routerLinkActive="active">Noodle Kalendar</a>
           </li> 
           <li>
-            <a routerLink="/DHBW-Standorte" routerLinkActive="active"> DHBW Standorte</a>
+            <a style="display:block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;"routerLink="/DHBW-Standorte" routerLinkActive="active"> DHBW Standorte</a>
           </li> 
+
+          
+          <li style="float:right"><button class="btn btn-lg btn-outline-primary" (click)="open(content)">Login</button></li>
+
+
+
+
           <li style="float:right">
-            <a href="https://www.dhbw.de/startseite" routerLinkActive="active">DHBW Website</a>
+            <a style="display:block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;"href="https://www.dhbw.de/startseite" routerLinkActive="active">DHBW Website</a>
           </li>          
-        <li style="float:right"><a routerLink="Impressum" routerLinkActive="active">Impressum</a></li>
+        <li style="float:right"><a style="display:block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;"routerLink="Impressum" routerLinkActive="active">Noodle Impressum</a></li>
       </ul>
 </nav>
 </div>
-   <router-outlet></router-outlet>
+<ng-template #content let-modal>
+  
+  <div class="modal-body">
+    <form>
+      <div class="mb-3">
+        <label for="dateOfBirth">Username</label>
+        <div class="input-group">
+          <input id="dateOfBirth" class="form-control" placeholder="put your Username here">
+          
+        </div>
+        <br>
 
+        <div class="mb-3">
+          <label for="dateOfBirth">Passwort</label>
+          <div class="input-group">
+            <input tpype="password" class="form-control" placeholder="put your Passwort here">
+            
+          </div>
+      </div>
+      </div>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="modal.close('Succesfully logged in')">Save</button>
+  </div>
+</ng-template>
+
+
+
+
+
+
+   <router-outlet></router-outlet>
+   
 
 

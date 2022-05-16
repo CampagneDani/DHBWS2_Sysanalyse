@@ -28,8 +28,16 @@ import { FlatpickrModule } from 'angularx-flatpickr';
 import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
 import { CalendarComponent } from './calendar/calendar.component';
 import { FullCalendarModule } from '@fullcalendar/angular';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import {MatInputModule} from '@angular/material/input';
+import {MatCardModule} from '@angular/material/card';
+import {MatToolbarModule} from '@angular/material/toolbar';
+
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatButtonModule } from '@angular/material/button';
 import dayGridPlugin from '@fullcalendar/daygrid'; // a plugin!
 import interactionPlugin from '@fullcalendar/interaction'; // a plugin!
+
 
 FullCalendarModule.registerPlugins([ // register FullCalendar plugins
   dayGridPlugin,
@@ -56,7 +64,11 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
     AppRoutingModule,
     BrowserAnimationsModule,
     MatDialogModule,
+    MatCardModule,
+    MatButtonModule,
     MatListModule,
+    MatInputModule,
+    MatToolbarModule,
     MatTableModule,
     ReactiveFormsModule,
     StoreModule.forRoot({todoList: todoReducer}),
@@ -74,6 +86,8 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
       useFactory: adapterFactory,
     }),
     FullCalendarModule,
+    FlexLayoutModule,
+    MatFormFieldModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

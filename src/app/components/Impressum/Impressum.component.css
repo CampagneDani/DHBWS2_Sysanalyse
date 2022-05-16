@@ -59,3 +59,20 @@
       flex-wrap: wrap;
       justify-content: space-around;
     }
+    body {
+      background: #fc9709 url("src\assets\img\hintergrund.jpg") fixed;
+      margin: 0;
+  }
+  *{
+      font-family: "Roboto", "Verdana", "Calibri", sans-serif;
+      line-height: 1.5;
+  }
+  @media (min-width: 1600px) {
+      .haupta {
+          background: white;
+          width: 95%;
+          margin: 0px auto;
+          padding: 1.5% 1%;
+          box-shadow: 2px 2px 5px #666666;
+      }
+  }

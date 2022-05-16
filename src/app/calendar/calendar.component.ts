@@ -19,7 +19,7 @@ export class CalendarComponent {
       { title: 'Programmierung II Klausur', date: '2022-06-03' },
       { title: 'Mathematik, Logik und Algebra Klausur', date: '2022-06-07' },
       { title: 'Grundlagen der Rechnungslegung Klausur', date: '2022-06-10' },
-      { title: 'SemesterSuff', date: '2022-06-10' },
+      { title: 'SemesterSuff', date: '2022-06-10'},
     
     ]
   };

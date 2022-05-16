@@ -10,6 +10,7 @@
     width: 64rem;
     height: 64rem;
 }
-body{
-    background-color: blanchedalmond;
+body {
+    background: #fc9709 url("src\assets\img\hintergrund.jpg") fixed;
+    margin: 0;
 }
