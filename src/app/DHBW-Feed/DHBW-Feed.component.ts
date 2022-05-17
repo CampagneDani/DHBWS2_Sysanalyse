@@ -11,7 +11,7 @@ import { Todo } from 'src/app/models/todo';
 export class DHBWFeedComponent implements OnInit{
   title = 'angular-mateiral';
   public newsFeedPosts: PostModel[] =[];
-  aufgaben: Todo[];
+  
 
   constructor() {}
 

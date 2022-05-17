@@ -1,13 +1,8 @@
-
-
-
-
-
-
-<!DOCTYPE html>
+<!DOCTYPE html> <div class="contentt">
 <div class="Header1">
   <nav>
-    <img src="assets\img\header_noodle.jpg" alt="header noodle" width="100%" >
+    <img src="assets\img\Header 3.png" alt="header noodle" width="100%" >
+      <div style="background-color: black;">
       <ul style="list-style-type: none;
       margin: 0;
       padding: 0;
@@ -18,58 +13,68 @@
         color: white;
         text-align: center;
         padding: 14px 16px;
-        text-decoration: none;" routerLink="/Home" routerLinkActive="active">Noodle Home</a> 
+        text-decoration: none;" 
+        routerLink="/Home" routerLinkActive="active">Noodle Home</a> 
           </li>
           <li>
         <a style="display:block;
         color: white;
         text-align: center;
         padding: 14px 16px;
-        text-decoration: none;"routerLink="/Todo-Liste" routerLinkActive="active">Noodle Schwarzes Brett</a>
+        text-decoration: none;"
+        routerLink="/Todo-Liste" routerLinkActive="active">Noodle Schwarzes Brett</a>
           </li>
           <li>
             <a style="display:block;
             color: white;
             text-align: center;
             padding: 14px 16px;
-            text-decoration: none;"routerLink="/DHBW_Feed" routerLinkActive="active"> Noodle Feed</a>
+            text-decoration: none;"
+            routerLink="/DHBW_Feed" routerLinkActive="active"> Noodle Memes</a>
           </li> 
           <li>
             <a style="display:block;
             color: white;
             text-align: center;
             padding: 14px 16px;
-            text-decoration: none;"routerLink="/Calendar" routerLinkActive="active">Noodle Kalendar</a>
+            text-decoration: none;"
+            routerLink="/Calendar" routerLinkActive="active">Noodle Kalendar</a>
           </li> 
           <li>
             <a style="display:block;
             color: white;
             text-align: center;
             padding: 14px 16px;
-            text-decoration: none;"routerLink="/DHBW-Standorte" routerLinkActive="active"> DHBW Standorte</a>
+            text-decoration: none;"
+            routerLink="/DHBW-Standorte" routerLinkActive="active"> DHBW Standorte</a>
           </li> 
 
           
-          <li style="float:right"><button class="btn btn-lg btn-outline-primary" (click)="open(content)">Login</button></li>
-
-
-
+          <li style="float:right">
+            <button class="btn btn-lg btn-outline-primary" (click)="open(content)">Login</button>
+          </li>
 
           <li style="float:right">
             <a style="display:block;
             color: white;
             text-align: center;
             padding: 14px 16px;
-            text-decoration: none;"href="https://www.dhbw.de/startseite" routerLinkActive="active">DHBW Website</a>
+            text-decoration: none;"
+            href="https://www.dhbw.de/startseite" routerLinkActive="active">DHBW Website</a>
           </li>          
         <li style="float:right"><a style="display:block;
           color: white;
           text-align: center;
           padding: 14px 16px;
-          text-decoration: none;"routerLink="Impressum" routerLinkActive="active">Noodle Impressum</a></li>
+          text-decoration: none;"
+          routerLink="Impressum" routerLinkActive="active">Noodle Impressum</a></li>
       </ul>
+    </div>
 </nav>
 </div>
+
+  
+
 <ng-template #content let-modal>
   
   <div class="modal-body">
@@ -97,12 +102,9 @@
   </div>
 </ng-template>
 
-
-
-
-
-
-   <router-outlet></router-outlet>
-   
-
+<body>
+  <router-outlet>
+  </router-outlet>
+</body>
+</div>
 

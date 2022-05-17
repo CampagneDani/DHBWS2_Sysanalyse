@@ -60,7 +60,7 @@
       justify-content: space-around;
     }
     body {
-      background: #fc9709 url("src\assets\img\hintergrund.jpg") fixed;
+      background: #fc9709 url("src\assets\img\slice2.png") fixed;
       margin: 0;
   }
   *{
@@ -69,7 +69,7 @@
   }
   @media (min-width: 1600px) {
       .haupta {
-          background: white;
+          background: url("src\assets\img\slice2.png") fixed;
           width: 95%;
           margin: 0px auto;
           padding: 1.5% 1%;

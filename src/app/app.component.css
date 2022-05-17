@@ -2,7 +2,7 @@ ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+   
     background-color: black;
     
 }
@@ -36,4 +36,13 @@ button{
     margin: 4px 2px;
     
 }
+body {
+    background: #fc9709 url("src\assets\img\slice2.png") fixed;
+    margin: 0;
+    
+    
+}
 
+.contentt{
+    overflow: hidden;
+}
