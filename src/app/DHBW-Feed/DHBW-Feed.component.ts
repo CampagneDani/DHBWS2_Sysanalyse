@@ -122,7 +122,7 @@ export class DHBWFeedComponent implements OnInit{
       {
         profilePhoto: "assets/img/marcel.png",
         name:"Marcel StriebRitz",
-        date: "8 hours ago",
+        date: "34 hours ago",
         postText: "BananenMemeCounter +1",
         postPhoto: "assets/img/robinbanane.png",
         likeCount: 41,
