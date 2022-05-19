@@ -68,7 +68,7 @@ img {
     }
 
     table {
-        width: 45%;
+        width: 75%;
         margin: 0;
     }
 
@@ -81,7 +81,7 @@ img {
 
 @media (min-width: 1200px) {
     .hauptbehaelter {
-        background: white;
+        background: #fc9709 url("src\assets\img\slice2.png") fixed;
         width: 50%;
         margin: 0px auto;
         padding: 1.5% 1%;

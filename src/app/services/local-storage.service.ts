@@ -18,20 +18,17 @@ export class LocalStorageService {
       return [];
     }
   }
-
   set(aufgabe: Todo) {
     const array = this.get();
     array.push(aufgabe);
     localStorage.setItem('formdata', JSON.stringify(array));
     return array;
   }
-
   removeItem(index: number) {
     const array = this.get();
     array.splice(index, 1);
     localStorage.setItem('formdata', JSON.stringify(array));
   }
-
   removeAll(){
     localStorage.clear();
   }

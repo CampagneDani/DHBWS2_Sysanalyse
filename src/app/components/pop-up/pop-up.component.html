@@ -15,12 +15,11 @@
 
     <label for="Wichtig"
       >Wichtig
-      <input type="checkbox" formControlName="wichtig" /> </label
-    ><br />
-    <br />
+      <input type="checkbox" formControlName="wichtig" /> </label>
+      <br/>
+    <br/>
   </form>
 </div>
-<br />
-
+<br/>
 <button [disabled]="myform.invalid" mat-button (click)="save()">Speichern</button>
 <button mat-button mat-dialog-close>Schließen</button>

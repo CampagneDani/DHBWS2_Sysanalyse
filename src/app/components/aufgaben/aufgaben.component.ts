@@ -32,10 +32,9 @@ export class AufgabenComponent implements OnInit {
     ) {}
   
     ngOnInit(): void {
-      this.store.dispatch(LoadTodos());
+      this.store.dispatch(LoadTodos());             //Der Refresh der Seite bei jeder Ausführung
     }
-  
-    openDialog() {
+    openDialog() {                                  // Öffnet den Popup Dialog und speichert local
       const dialogRef = this.dialog.open(PopUpComponent);
       dialogRef.afterClosed().subscribe((aufgabe: Todo) => {
         if (aufgabe) {
@@ -44,16 +43,13 @@ export class AufgabenComponent implements OnInit {
         }
       });
     }
-  
-    removeItem(index:number) {
+    removeItem(index:number) {                      // Entfernt eine Anzeige
       this.store.dispatch(removeItemTodo({index}))
     }
-  
-    removeAllTodo() {
+    removeAllTodo() {                               //Entfernt alle Anzeigen
       this.store.dispatch(removeTodo());
     }
-
-    editItem(index:number, aufgabe:Todo) {
+    editItem(index:number, aufgabe:Todo) {          // Zum Editieren von den Anzeigen
       console.log(aufgabe)
       const dialogrefedit = this.dialog.open(PopUpComponent,{data : aufgabe })
       
@@ -63,12 +59,6 @@ export class AufgabenComponent implements OnInit {
           this.store.dispatch(editTodo({index, todo: aufgabe}))
         }
       });
-      
-      
-      
-      
-     
-     
     }
  }
  //edit/remove/removeitem in store

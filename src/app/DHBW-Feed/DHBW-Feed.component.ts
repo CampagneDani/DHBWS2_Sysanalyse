@@ -18,6 +18,15 @@ export class DHBWFeedComponent implements OnInit{
   ngOnInit(): void {
     this.newsFeedPosts =[
       {
+        profilePhoto: "assets/img/MicrosoftTeams-image (3).png",
+        name:"LionRazier",
+        date: "0.6 hours ago",
+        postText: "Eis lutschen, weil keiner Füße gibt",
+        postPhoto: "assets/img/davideis.jpeg",
+        likeCount: 24,
+        viewProfile:"1",
+      } as PostModel,
+      {
         profilePhoto: "assets/img/yumyum.jpg",
         name:"J.A(rndt).N.I.K",
         date: "1 hours ago",

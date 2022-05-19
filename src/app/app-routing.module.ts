@@ -9,12 +9,14 @@ import { ImpressumComponent } from './components/Impressum/Impressum.component';
 import { DHBWStandorteComponent } from './DHBW-Standorte/DHBW-Standorte.component';
 import { CalendarComponent } from './calendar/calendar.component';
 
+
+
 const routes: Routes = [
   {path: 'Home', component: HomeboardComponent},
-  {path:'Todo-Liste',component:AufgabenComponent},
+  {path:'SchwarzesBrett',component:AufgabenComponent},
   {path:'Taschenrechner',component:CalculatorComponent},
   {path:'DHBW_News', component:DHBWNewsComponent},
-  {path:'DHBW_Feed', component:DHBWFeedComponent},
+  {path:'DHBW_Memes', component:DHBWFeedComponent},
   {path:'Impressum', component:ImpressumComponent},
   {path:'DHBW-Standorte',component:DHBWStandorteComponent},
   {path: 'Calendar', component:CalendarComponent},

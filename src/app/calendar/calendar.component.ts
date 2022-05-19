@@ -15,6 +15,7 @@ export class CalendarComponent {
       { title: 'Assignment Abgabe', date: '2022-05-15' },
       { title: 'Sales and Consulting Abgabe', date: '2022-05-09' },
       { title: 'Feiertag Christi Himmekfahrt', date: '2022-05-26' },
+      { title: 'Systemanalyse Präsentation', date: '2022-05-20' },
       { title: 'Grundlegende Konzepte der IT Klausur', date: '2022-05-30' },
       { title: 'Programmierung II Klausur', date: '2022-06-03' },
       { title: 'Mathematik, Logik und Algebra Klausur', date: '2022-06-07' },

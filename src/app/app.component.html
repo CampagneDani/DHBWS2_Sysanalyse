@@ -22,7 +22,7 @@
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;"
-        routerLink="/Todo-Liste" routerLinkActive="active">Noodle Schwarzes Brett</a>
+        routerLink="/SchwarzesBrett" routerLinkActive="active">Noodle Schwarzes Brett</a>
           </li>
           <li>
             <a style="display:block;
@@ -30,7 +30,7 @@
             text-align: center;
             padding: 14px 16px;
             text-decoration: none;"
-            routerLink="/DHBW_Feed" routerLinkActive="active"> Noodle Memes</a>
+            routerLink="/DHBW_Memes" routerLinkActive="active"> Noodle Memes</a>
           </li> 
           <li>
             <a style="display:block;
@@ -76,29 +76,26 @@
   
 
 <ng-template #content let-modal>
-  
   <div class="modal-body">
     <form>
       <div class="mb-3">
         <label for="dateOfBirth">Username</label>
         <div class="input-group">
           <input id="dateOfBirth" class="form-control" placeholder="put your Username here">
-          
         </div>
         <br>
-
         <div class="mb-3">
           <label for="dateOfBirth">Passwort</label>
           <div class="input-group">
             <input tpype="password" class="form-control" placeholder="put your Passwort here">
             
           </div>
-      </div>
+        </div>
       </div>
     </form>
   </div>
   <div class="modal-footer">
-    <button type="button" class="btn btn-outline-dark" (click)="modal.close('Succesfully logged in')">Save</button>
+    <button type="button" class="btn btn-outline-dark" (click)="modal.close('')">Save</button>
   </div>
 </ng-template>
 

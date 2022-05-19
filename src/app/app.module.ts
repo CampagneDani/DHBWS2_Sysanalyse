@@ -43,15 +43,16 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
   dayGridPlugin,
   interactionPlugin
 ]);
+
+
 @NgModule({
+  
   declarations: [
     AppComponent,
     routingComponents,
     PopUpComponent,
     AufgabenComponent,
-    CalculatorComponent,
     PostComponent,
-    DHBWNewsComponent,
     DHBWNewsComponent,
     DHBWFeedComponent,
     ImpressumComponent,

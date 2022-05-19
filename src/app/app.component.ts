@@ -21,6 +21,9 @@ export class AppComponent implements OnInit {
 // es klappen nur jpg!!!!!!!
   ngOnInit(): void {
   }
+
+
+  // **Login Methode mit Modal Popup Fenster**
   open(content: any) {
     this.modalService.open(content, {ariaLabelledBy: 'modal-basic-title'}).result.then((result) => {
       this.closeResult = `Closed with: ${result}`;
@@ -38,11 +41,5 @@ export class AppComponent implements OnInit {
       return `with: ${reason}`;
     }
   }
-
+// **Login Methode mit Modal Popup Fenster**
 }
-
-//ngrx: einbauen, eine zwischenschicht. ich hol mir daten über den Store, um dann refresh zu ersetzen.
-// -> action; get erstellen, diesen dann als dispatch erstellen und das refresh ersetzen
-// TODO für store verwenden. zuerst den state anklicken: 
-//store modul importieren state anlegen, aktionen definieren und zu den aktionen effekte die den service aufrufen, 
-//den reducer die wiederum in den store schreiben und dann einen selector um aus dem store auszuschreiben

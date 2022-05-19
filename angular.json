@@ -92,7 +92,8 @@
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
             "assets": [
-              "src/favicon.ico",
+              "src/pokeball.png",
+              "src/yumyum.jpg",
               "src/assets"
             ],
             "styles": [
